@@ -1,9 +1,9 @@
 {
   "name": "@cirtemegla/ds-react",
   "sideEffects": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React specific wrapper for component-library",
-  "type": "module",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/ionic-team/ionic.git"
