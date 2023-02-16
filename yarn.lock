@@ -23,19 +23,19 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@cirtemegla/ds-components@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-components/-/ds-components-0.0.3.tgz#d36169df5cec081fd38f585ae42f838f40571ee0"
-  integrity sha512-sHnmRwXPEbiXaDjQJCaldzZssDIAzX/X/IY4lyPPC7wQy4ejIuyRB4BlPa2DzJgmt02m2piAeX/q3BG0eEC8RQ==
+"@cirtemegla/ds-components@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-components/-/ds-components-0.0.5.tgz#e5c98c0366e45aa4fd690190b24e68c788e6bc5c"
+  integrity sha512-VivddjcGQ+CrvmKrELmsM4HfbaW0n0xIHtzpXOVV/KpWlfXJ6IO9hnnqujvJHkRdGIYarXLC7K3iwRlfppfY9g==
   dependencies:
-    "@cirtemegla/ds-tokens" "^1.0.0"
+    "@cirtemegla/ds-tokens" "^1.0.1"
     "@stencil/core" "^3.0.0"
     clsx "^1.2.1"
 
-"@cirtemegla/ds-tokens@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-tokens/-/ds-tokens-1.0.0.tgz#338c89f0920f3c0a9d26f1da7439f07e226ba277"
-  integrity sha512-q6NcgWUYcdUnrchIeI6onRfBh4QQ8bY/2DLkBkx/Fhpg+kxHj3ba+BOzDpnkO1BwEE8Rm3iarlGCwlFYF4bDlw==
+"@cirtemegla/ds-tokens@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-tokens/-/ds-tokens-1.0.1.tgz#3b5b86c4dfaed1b8b2a85990b43f89ad0c0d3f58"
+  integrity sha512-w3FIaZRZPUZrfgNlr7TJiwuovO7pRLbI1OSMBuee1Ukr1/XB17faO+O+5Wp7zR7P7lplNCGzwR5APxMQSbZU6w==
 
 "@jest/types@^24.9.0":
   version "24.9.0"

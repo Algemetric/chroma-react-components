@@ -1,7 +1,7 @@
 {
   "name": "@cirtemegla/ds-react",
   "sideEffects": false,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "React specific wrapper for component-library",
   "type": "commonjs",
   "repository": {
@@ -35,7 +35,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@cirtemegla/ds-components": "^0.0.3"
+    "@cirtemegla/ds-components": "^0.0.5"
   },
   "peerDependencies": {
     "react": "^17.0.2",
