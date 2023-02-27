@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@algemetric/chroma-components@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@algemetric/chroma-components/-/chroma-components-0.0.6.tgz#e5b324cb6d35b3604866b197b7d1ee9269a6c058"
+  integrity sha512-N7OZW64FrvP7vDyWn5viTuhJKeuP/zRyl273/VTa3pcLPbOAwnuvXBj/OiUv0e6TPIIPUXoR/EM7WQ/q6i8rCw==
+  dependencies:
+    "@cirtemegla/ds-tokens" "^1.0.1"
+    "@stencil/core" "^3.0.0"
+    clsx "^1.2.1"
+
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -23,19 +32,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@cirtemegla/ds-components@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-components/-/ds-components-0.0.5.tgz#e5c98c0366e45aa4fd690190b24e68c788e6bc5c"
-  integrity sha512-VivddjcGQ+CrvmKrELmsM4HfbaW0n0xIHtzpXOVV/KpWlfXJ6IO9hnnqujvJHkRdGIYarXLC7K3iwRlfppfY9g==
-  dependencies:
-    "@cirtemegla/ds-tokens" "^1.0.1"
-    "@stencil/core" "^3.0.0"
-    clsx "^1.2.1"
-
 "@cirtemegla/ds-tokens@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-tokens/-/ds-tokens-1.0.1.tgz#3b5b86c4dfaed1b8b2a85990b43f89ad0c0d3f58"
-  integrity sha512-w3FIaZRZPUZrfgNlr7TJiwuovO7pRLbI1OSMBuee1Ukr1/XB17faO+O+5Wp7zR7P7lplNCGzwR5APxMQSbZU6w==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@cirtemegla/ds-tokens/-/ds-tokens-1.0.3.tgz#6e238247dc516d117b8259567200c00794100d71"
+  integrity sha512-NmBUXwaympTwLUpAmsdM1/J44RmiPJxkGcUbCFk8gMWZcRT+LjnQHoqnkeamCSQJqV7rF4/hkX8HmCpBP00wPw==
 
 "@jest/types@^24.9.0":
   version "24.9.0"
