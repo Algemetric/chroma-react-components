@@ -28,5 +28,3 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo It worked! version ${{github.event.client_payload.version}}
-
-      - name:
