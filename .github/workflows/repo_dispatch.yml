@@ -33,17 +33,13 @@ jobs:
         run: |
           npm version ${{github.event.client_payload.version}}
 
-      - name: Push changes
-        run: |
-          git push
-
       - name: Set NodeJS 18
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
           registry-url: "https://registry.npmjs.org"
 
-      - name: Run install
+      - name: Run Build
         uses: borales/actions-yarn@v4
         with:
           cmd: build
@@ -52,3 +48,9 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          branch: ${{ github.ref }}
