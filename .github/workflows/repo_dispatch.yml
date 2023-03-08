@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: "0"
 
       - name: Set NodeJS 18
         uses: actions/setup-node@v3
@@ -18,10 +20,12 @@ jobs:
         with:
           cmd: install
 
-      - name: Status
+      - name: Git
         run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
           git status
-          git diff
+          git diff --name-only
 
   Testing:
     runs-on: ubuntu-latest
