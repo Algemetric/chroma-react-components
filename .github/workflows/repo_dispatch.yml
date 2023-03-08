@@ -1,0 +1,10 @@
+name: Repository Dispatch
+on:
+  repository_dispatch:
+    types: [update-repo]
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo It worked!
