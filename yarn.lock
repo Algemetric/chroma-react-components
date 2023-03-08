@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@algemetric/chroma-components@*":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@algemetric/chroma-components/-/chroma-components-0.0.19.tgz#78925e7e3da9ea5ed0e0280fb6fbfc8212981fa1"
-  integrity sha512-rX+2nF4WZn/xxnBomwYCV2tJv7N67tqV2E0/fXFfvW+Ac/X5Sp/AAcFhnl2lBxtk2uu2eo46HSwryJ6q6lK8QQ==
+"@algemetric/chroma-components@latest":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@algemetric/chroma-components/-/chroma-components-0.2.2.tgz#20878a10b2973d4440ab9ddc8858571fc79aa0bd"
+  integrity sha512-lROPH9okMA7qPr0FFW+EE+pZdhARshDrGFLSFcPzTwNcsfeKbAZmNHpMbQb65AcWFyZBNkumN8kj/1jY/H9Stg==
   dependencies:
-    "@algemetric/chroma-tokens" "1.0.7"
+    "@algemetric/chroma-tokens" "1.1.3"
     "@stencil/core" "^3.0.0"
     clsx "^1.2.1"
 
-"@algemetric/chroma-tokens@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@algemetric/chroma-tokens/-/chroma-tokens-1.0.7.tgz#c36232482fa3a6c2cc27a5fd8aad4507b23fbe78"
-  integrity sha512-LSzav1O28j/URJJB7NZ7MNn2hEld4Jkk1B1QyUjVd86hVFfW6hQAzdScsaaTilbdMPkopE+JO99ItMiuvWvw/A==
+"@algemetric/chroma-tokens@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@algemetric/chroma-tokens/-/chroma-tokens-1.1.3.tgz#45574152c4f7d9db0856259fc3e3b8a70a4f5f5d"
+  integrity sha512-vhIZ5APNfrLuWi2/l/Z/ImTtcyJcXwkhaTTnx/3trEVZNHZDmNFxSIn9C40+Q6vh22UKb8HouqGUVgRZCpfD8Q==
 
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.18.6"
