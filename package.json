@@ -1,7 +1,7 @@
 {
   "name": "@algemetric/chroma-react-components",
   "sideEffects": false,
-  "version": "1.1.0",
+  "version": "0.2.2",
   "description": "React specific wrapper for component-library",
   "type": "commonjs",
   "repository": {
