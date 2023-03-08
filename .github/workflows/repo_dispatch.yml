@@ -3,8 +3,30 @@ on:
   repository_dispatch:
     types: [update-repo]
 jobs:
+  setupEnvironment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set NodeJS 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Status
+        run: |
+          git status
+          git diff
+
   Testing:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: echo It worked! version ${{github.event.client_payload.version}}
+
+      - name:
