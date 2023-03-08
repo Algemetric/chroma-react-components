@@ -3,7 +3,7 @@ on:
   repository_dispatch:
     types: [update-repo]
 jobs:
-  setupEnvironment:
+  PublishToNPM:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,15 +20,35 @@ jobs:
         with:
           cmd: install
 
-      - name: Git
+      - name: Setup user on Git
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git status
-          git diff --name-only
 
-  Testing:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: echo It worked! version ${{github.event.client_payload.version}}
+      - name: Commit changes
+        run: |
+          git commit -a -m "Update chroma-components dependency"
+
+      - name: Create new version
+        run: |
+          npm version ${{github.event.client_payload.version}}
+
+      - name: Push changes
+        run: |
+          git push
+
+      - name: Set NodeJS 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+
+      - name: Publish package on NPM 📦
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
