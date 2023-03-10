@@ -19,7 +19,7 @@ jobs:
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
-          cmd: install --force
+          cmd: upgrade @algemetric/chroma-components --latest
 
       - name: Setup user on Git
         run: |
